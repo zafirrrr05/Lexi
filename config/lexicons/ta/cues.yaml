@@ -1,0 +1,19 @@
+# Cue words. cls: CREDIT DEBIT PROMISE RESCHEDULE (intent cues) | NEG (structure). strength in (0,1]; >= 0.8 is a strong cue.
+- {cls: CREDIT, strength: 0.95, forms: {latin: [jama], deva: [], tamil: [ஜமா]}}
+- {cls: CREDIT, strength: 0.95, forms: {latin: [vandhuchu, vanthuchu, vandhadhu], deva: [], tamil: [வந்துச்சு, வந்தது]}}
+- {cls: CREDIT, strength: 0.9, forms: {latin: [kedachuchu, kidaichadhu], deva: [], tamil: [கிடைச்சது, கிடைத்தது]}}
+- {cls: CREDIT, strength: 0.9, forms: {latin: [received], deva: [], tamil: [ரிசீவ்டு]}}
+- {cls: DEBIT, strength: 0.95, forms: {latin: [kadan, kadanaa], deva: [], tamil: [கடன், கடனா]}}
+- {cls: DEBIT, strength: 0.9, forms: {latin: [udhaar], deva: [], tamil: [உதார்]}}
+- {cls: DEBIT, strength: 0.8, forms: {latin: [baaki, paakki], deva: [], tamil: [பாக்கி]}}
+- {cls: DEBIT, strength: 0.7, forms: {latin: [kuduthen, koduthaen], deva: [], tamil: [கொடுத்தேன்]}}
+- {cls: DEBIT, strength: 0.5, forms: {latin: [maal], deva: [], tamil: [மால்]}}
+- {cls: PROMISE, strength: 0.95, forms: {latin: [tharuvaanga, tharuvanga, kudupaanga], deva: [], tamil: [தருவாங்க, கொடுப்பாங்க]}}
+- {cls: PROMISE, strength: 0.9, forms: {latin: [tharuven, tharen], deva: [], tamil: [தருவேன், தரேன்]}}
+- {cls: PROMISE, strength: 0.9, forms: {latin: [vaakku, promise], deva: [], tamil: [வாக்கு, ப்ராமிஸ்]}}
+- {cls: RESCHEDULE, strength: 0.9, forms: {latin: [maathu, maathunga, maatru], deva: [], tamil: [மாத்து, மாத்துங்க]}}
+- {cls: RESCHEDULE, strength: 0.8, forms: {latin: [thalli, thalli podunga], deva: [], tamil: [தள்ளி]}}
+- {cls: RESCHEDULE, strength: 0.9, forms: {latin: [postpone], deva: [], tamil: [போஸ்ட்போன்]}}
+- {cls: RESCHEDULE, strength: 0.8, forms: {latin: [extend], deva: [], tamil: [எக்ஸ்டெண்ட்]}}
+- {cls: RESCHEDULE, strength: 0.6, forms: {latin: [due], deva: [], tamil: [டியூ]}}
+- {cls: NEG, strength: 0.9, forms: {latin: [illa, illai], deva: [], tamil: [இல்ல, இல்லை]}}

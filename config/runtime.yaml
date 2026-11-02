@@ -1,0 +1,46 @@
+# Ports, timeouts, lease, paths and provider mode (spec 6.2, 13, C1, C6, C9, C12).
+server: {host: 127.0.0.1, port: 8000}
+twin:   {host: 127.0.0.1, control_port: 8001, seed: 7, accounts_per_language: 6}   # seed: callers and ledger derive the same SME accounts from it
+mode: LIVE                 # C7 mode: LIVE | COLLECT | COLD_START
+clock_speed: 1.0           # >1 compresses undo window, lease and heartbeat for bulk data collection
+
+paths:
+  data: data
+  audit: data/audit
+  ledger: data/ledger.db
+  labels: data/labels.db
+  certs: data/certs.db
+  checkpoints: data/checkpoints
+  providers_cache: data/providers_cache
+  artifacts: data/artifacts
+  results: results
+
+providers:
+  mode: sim                # sim = offline simulator (docs/DECISIONS.md D-001) | live = hosted Prisma/Timbre/Evon
+  cache: read_through      # live | read_through | replay (provider response cache, 13)
+  prisma: {url: "wss://api.vachana.ai/stt/v3/stream", key_env: GNANI_API_KEY, lang_code: {hi: hi-IN, ta: ta-IN}, sample_rate: 8000}
+  timbre: {url: "https://api.vachana.ai/api/v1/tts/sse", key_env: GNANI_API_KEY, model: timbre-v2.5, voices: {hi: [Nalini, Deepak], ta: [Nalini, Deepak]}}
+  evon:   {url: "http://localhost:8000/v1/chat/completions", key_env: EVON_API_KEY, model: gnani-evon-v3.3}
+  credits_total: 5000
+  credit_reserve: 0.10
+
+timeouts_ms: {evon: 800, prisma_final: 2500, timbre_first_chunk: 1500}
+
+gateway:                   # C1
+  frame_ms: 20
+  eou_silence_ms: 350
+  numeric_hold: true       # A8 ablation switches this off
+  numeric_hold_ms: 600
+  numeric_hold_max_ms: 1200
+  no_speech_timeout_s: 8
+  max_utterance_s: 20
+  barge_in_ms: 150
+  max_sessions: 20
+
+ledger: {undo_window_s: 5, delivery_timeout_s: 10, unhealthy_s: 30, recovery_wait: true}
+
+lease: {heartbeat_s: 2, ttl_s: 10, registry_max_age_s: 604800}
+
+audit: {group_commit_ms: 2, group_commit_max: 16, segment_records: 50000}
+
+twin_defaults: {speed: 1.0, concurrency: 4, kappa: 0.25, silence_prob: 0.03, canary_rate_per_min: 1.0}

@@ -1,0 +1,24 @@
+# Cue words. cls: CREDIT DEBIT PROMISE RESCHEDULE (intent cues) | NEG (structure). strength in (0,1]; >= 0.8 is a strong cue.
+- {cls: CREDIT, strength: 0.95, forms: {latin: [jama], deva: [जमा], tamil: []}}
+- {cls: CREDIT, strength: 0.85, forms: {latin: [aaya, aaye, aayi], deva: [आया, आये, आए, आयी], tamil: []}}
+- {cls: CREDIT, strength: 0.8, forms: {latin: [mila, mile, mili], deva: [मिला, मिले, मिली], tamil: []}}
+- {cls: CREDIT, strength: 0.9, forms: {latin: [received], deva: [रिसीव्ड], tamil: []}}
+- {cls: DEBIT, strength: 0.95, forms: {latin: [udhaar, udhar], deva: [उधार], tamil: []}}
+- {cls: DEBIT, strength: 0.8, forms: {latin: [baaki, baki], deva: [बाकी], tamil: []}}
+- {cls: DEBIT, strength: 0.6, forms: {latin: [diya, diye], deva: [दिया, दिये, दिए], tamil: []}}
+- {cls: DEBIT, strength: 0.5, forms: {latin: [maal], deva: [माल], tamil: []}}
+- {cls: DEBIT, strength: 0.3, forms: {latin: [likh, likho], deva: [लिख, लिखो], tamil: []}}
+- {cls: PROMISE, strength: 0.95, forms: {latin: [denge, dega, degi, dengi], deva: [देंगे, देगा, देगी, देंगी], tamil: []}}
+- {cls: PROMISE, strength: 0.95, forms: {latin: [vaada, wada, vada], deva: [वादा], tamil: []}}
+- {cls: PROMISE, strength: 0.8, forms: {latin: [karenge, karega], deva: [करेंगे, करेगा], tamil: []}}
+- {cls: PROMISE, strength: 0.9, forms: {latin: [bhejenge, bhejega], deva: [भेजेंगे, भेजेगा], tamil: []}}
+- {cls: PROMISE, strength: 0.9, forms: {latin: [promise], deva: [प्रॉमिस], tamil: []}}
+- {cls: RESCHEDULE, strength: 0.9, forms: {latin: [badal, badlo, badal do], deva: [बदल, बदलो], tamil: []}}
+- {cls: RESCHEDULE, strength: 0.8, forms: {latin: [badha, badhao], deva: [बढ़ाओ], tamil: []}}
+- {cls: RESCHEDULE, strength: 0.7, forms: {latin: [aage], deva: [आगे], tamil: []}}
+- {cls: RESCHEDULE, strength: 0.9, forms: {latin: [postpone], deva: [पोस्टपोन], tamil: []}}
+- {cls: RESCHEDULE, strength: 0.8, forms: {latin: [shift, extend], deva: [शिफ्ट], tamil: []}}
+- {cls: RESCHEDULE, strength: 0.8, forms: {latin: [taal, taalo], deva: [टाल, टालो], tamil: []}}
+- {cls: RESCHEDULE, strength: 0.6, forms: {latin: [due], deva: [ड्यू], tamil: []}}
+- {cls: NEG, strength: 0.9, forms: {latin: [nahi, nahin], deva: [नहीं, नही], tamil: []}}
+- {cls: NEG, strength: 0.8, forms: {latin: [mat], deva: [मत], tamil: []}}

@@ -1,0 +1,16 @@
+# Groups of tokens that sound alike on a narrowband line (17/70, 35/45 ...); members are phonetic neighbours of each other.
+groups:
+  - [satrah, sattar]
+  - [paintees, paintalis]
+  - [dhai, do]
+  - [terah, tees]
+  - [chaudah, chalis]
+  - [pandrah, pachas]
+  - [solah, saath]
+  - [atharah, assi]
+  - [unnis, nabbe]
+  - [sau, so]
+  - [paanch, pachas]
+  - [chaar, chalis]
+  - [saat, sattar]
+  - [aath, assi]

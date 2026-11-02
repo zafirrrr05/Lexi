@@ -1,0 +1,102 @@
+# Hindi numerals 0..99. Each entry: value (int) and forms {latin, deva, tamil}; every spelling variant listed is matched
+# through the phonetic key (evidence/ipk.py), so spelling variants that fold to the same key need not be listed.
+- {value: 0, forms: {latin: [shunya], deva: [शून्य], tamil: []}}
+- {value: 1, forms: {latin: [ek, aik], deva: [एक], tamil: []}}
+- {value: 2, forms: {latin: [do], deva: [दो], tamil: []}}
+- {value: 3, forms: {latin: [teen, tin], deva: [तीन], tamil: []}}
+- {value: 4, forms: {latin: [chaar, char, chaar], deva: [चार], tamil: []}}
+- {value: 5, forms: {latin: [paanch, panch], deva: [पाँच, पांच], tamil: []}}
+- {value: 6, forms: {latin: [chhah, chhe, chah], deva: [छह, छः], tamil: []}}
+- {value: 7, forms: {latin: [saat], deva: [सात], tamil: []}}
+- {value: 8, forms: {latin: [aath, ath], deva: [आठ], tamil: []}}
+- {value: 9, forms: {latin: [nau, nao], deva: [नौ], tamil: []}}
+- {value: 10, forms: {latin: [das, dus], deva: [दस], tamil: []}}
+- {value: 11, forms: {latin: [gyarah], deva: [ग्यारह], tamil: []}}
+- {value: 12, forms: {latin: [barah, baarah], deva: [बारह], tamil: []}}
+- {value: 13, forms: {latin: [terah], deva: [तेरह], tamil: []}}
+- {value: 14, forms: {latin: [chaudah], deva: [चौदह], tamil: []}}
+- {value: 15, forms: {latin: [pandrah, pandra], deva: [पंद्रह], tamil: []}}
+- {value: 16, forms: {latin: [solah], deva: [सोलह], tamil: []}}
+- {value: 17, forms: {latin: [satrah], deva: [सत्रह], tamil: []}}
+- {value: 18, forms: {latin: [atharah], deva: [अठारह], tamil: []}}
+- {value: 19, forms: {latin: [unnis], deva: [उन्नीस], tamil: []}}
+- {value: 20, forms: {latin: [bees, bis], deva: [बीस], tamil: []}}
+- {value: 21, forms: {latin: [ikkis], deva: [इक्कीस], tamil: []}}
+- {value: 22, forms: {latin: [baais], deva: [बाईस], tamil: []}}
+- {value: 23, forms: {latin: [teis], deva: [तेईस], tamil: []}}
+- {value: 24, forms: {latin: [chaubis], deva: [चौबीस], tamil: []}}
+- {value: 25, forms: {latin: [pachchis, pachis, pacchis], deva: [पच्चीस], tamil: []}}
+- {value: 26, forms: {latin: [chhabbis], deva: [छब्बीस], tamil: []}}
+- {value: 27, forms: {latin: [sattaais], deva: [सत्ताईस], tamil: []}}
+- {value: 28, forms: {latin: [atthaais], deva: [अट्ठाईस], tamil: []}}
+- {value: 29, forms: {latin: [untis], deva: [उनतीस], tamil: []}}
+- {value: 30, forms: {latin: [tees, tis], deva: [तीस], tamil: []}}
+- {value: 31, forms: {latin: [ikattis], deva: [इकतीस], tamil: []}}
+- {value: 32, forms: {latin: [battis], deva: [बत्तीस], tamil: []}}
+- {value: 33, forms: {latin: [taintis], deva: [तैंतीस], tamil: []}}
+- {value: 34, forms: {latin: [chauntis], deva: [चौंतीस], tamil: []}}
+- {value: 35, forms: {latin: [paintees], deva: [पैंतीस], tamil: []}}
+- {value: 36, forms: {latin: [chhattis], deva: [छत्तीस], tamil: []}}
+- {value: 37, forms: {latin: [saintis], deva: [सैंतीस], tamil: []}}
+- {value: 38, forms: {latin: [adtis], deva: [अड़तीस], tamil: []}}
+- {value: 39, forms: {latin: [untalis], deva: [उनतालीस], tamil: []}}
+- {value: 40, forms: {latin: [chalis], deva: [चालीस], tamil: []}}
+- {value: 41, forms: {latin: [iktalis], deva: [इकतालीस], tamil: []}}
+- {value: 42, forms: {latin: [bayalis], deva: [बयालीस], tamil: []}}
+- {value: 43, forms: {latin: [taintalis], deva: [तैंतालीस], tamil: []}}
+- {value: 44, forms: {latin: [chauvalis], deva: [चौवालीस], tamil: []}}
+- {value: 45, forms: {latin: [paintalis], deva: [पैंतालीस], tamil: []}}
+- {value: 46, forms: {latin: [chhiyalis], deva: [छियालीस], tamil: []}}
+- {value: 47, forms: {latin: [saintalis], deva: [सैंतालीस], tamil: []}}
+- {value: 48, forms: {latin: [adtalis], deva: [अड़तालीस], tamil: []}}
+- {value: 49, forms: {latin: [unchas], deva: [उनचास], tamil: []}}
+- {value: 50, forms: {latin: [pachas, pachaas], deva: [पचास], tamil: []}}
+- {value: 51, forms: {latin: [ikyavan], deva: [इक्यावन], tamil: []}}
+- {value: 52, forms: {latin: [bavan], deva: [बावन], tamil: []}}
+- {value: 53, forms: {latin: [tirpan], deva: [तिरपन], tamil: []}}
+- {value: 54, forms: {latin: [chauvan], deva: [चौवन], tamil: []}}
+- {value: 55, forms: {latin: [pachpan], deva: [पचपन], tamil: []}}
+- {value: 56, forms: {latin: [chhappan], deva: [छप्पन], tamil: []}}
+- {value: 57, forms: {latin: [sattavan], deva: [सत्तावन], tamil: []}}
+- {value: 58, forms: {latin: [atthavan], deva: [अट्ठावन], tamil: []}}
+- {value: 59, forms: {latin: [unsath], deva: [उनसठ], tamil: []}}
+- {value: 60, forms: {latin: [saath], deva: [साठ], tamil: []}}
+- {value: 61, forms: {latin: [iksath], deva: [इकसठ], tamil: []}}
+- {value: 62, forms: {latin: [basath], deva: [बासठ], tamil: []}}
+- {value: 63, forms: {latin: [tirsath], deva: [तिरसठ], tamil: []}}
+- {value: 64, forms: {latin: [chaunsath], deva: [चौंसठ], tamil: []}}
+- {value: 65, forms: {latin: [painsath], deva: [पैंसठ], tamil: []}}
+- {value: 66, forms: {latin: [chhiyasath], deva: [छियासठ], tamil: []}}
+- {value: 67, forms: {latin: [sadsath], deva: [सड़सठ], tamil: []}}
+- {value: 68, forms: {latin: [adsath], deva: [अड़सठ], tamil: []}}
+- {value: 69, forms: {latin: [unhattar], deva: [उनहत्तर], tamil: []}}
+- {value: 70, forms: {latin: [sattar], deva: [सत्तर], tamil: []}}
+- {value: 71, forms: {latin: [ikhattar], deva: [इकहत्तर], tamil: []}}
+- {value: 72, forms: {latin: [bahattar], deva: [बहत्तर], tamil: []}}
+- {value: 73, forms: {latin: [tihattar], deva: [तिहत्तर], tamil: []}}
+- {value: 74, forms: {latin: [chauhattar], deva: [चौहत्तर], tamil: []}}
+- {value: 75, forms: {latin: [pachhattar], deva: [पचहत्तर], tamil: []}}
+- {value: 76, forms: {latin: [chhihattar], deva: [छिहत्तर], tamil: []}}
+- {value: 77, forms: {latin: [sathattar], deva: [सतहत्तर], tamil: []}}
+- {value: 78, forms: {latin: [athhattar], deva: [अठहत्तर], tamil: []}}
+- {value: 79, forms: {latin: [unyasi], deva: [उन्यासी], tamil: []}}
+- {value: 80, forms: {latin: [assi], deva: [अस्सी], tamil: []}}
+- {value: 81, forms: {latin: [ikyasi], deva: [इक्यासी], tamil: []}}
+- {value: 82, forms: {latin: [bayasi], deva: [बयासी], tamil: []}}
+- {value: 83, forms: {latin: [tirasi], deva: [तिरासी], tamil: []}}
+- {value: 84, forms: {latin: [chaurasi], deva: [चौरासी], tamil: []}}
+- {value: 85, forms: {latin: [pachasi], deva: [पचासी], tamil: []}}
+- {value: 86, forms: {latin: [chhiyasi], deva: [छियासी], tamil: []}}
+- {value: 87, forms: {latin: [sattasi], deva: [सत्तासी], tamil: []}}
+- {value: 88, forms: {latin: [atthasi], deva: [अट्ठासी], tamil: []}}
+- {value: 89, forms: {latin: [navasi], deva: [नवासी], tamil: []}}
+- {value: 90, forms: {latin: [nabbe], deva: [नब्बे], tamil: []}}
+- {value: 91, forms: {latin: [ikyanave], deva: [इक्यानवे], tamil: []}}
+- {value: 92, forms: {latin: [banave], deva: [बानवे], tamil: []}}
+- {value: 93, forms: {latin: [tiranave], deva: [तिरानवे], tamil: []}}
+- {value: 94, forms: {latin: [chauranave], deva: [चौरानवे], tamil: []}}
+- {value: 95, forms: {latin: [panchanave], deva: [पंचानवे], tamil: []}}
+- {value: 96, forms: {latin: [chhiyanave], deva: [छियानवे], tamil: []}}
+- {value: 97, forms: {latin: [sattanave], deva: [सत्तानवे], tamil: []}}
+- {value: 98, forms: {latin: [atthanave], deva: [अट्ठानवे], tamil: []}}
+- {value: 99, forms: {latin: [ninyanave], deva: [निन्यानवे], tamil: []}}

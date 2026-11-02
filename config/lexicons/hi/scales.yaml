@@ -1,0 +1,5 @@
+# Scale words: value 100 | 1000 | 100000 | 10000000. Entry: value, forms.
+- {value: 100, forms: {latin: [sau, hundred], deva: [सौ], tamil: []}}
+- {value: 1000, forms: {latin: [hazaar, hajar, thousand, hazar], deva: [हज़ार, हजार], tamil: []}}
+- {value: 100000, forms: {latin: [lakh, lac, laakh], deva: [लाख], tamil: []}}
+- {value: 10000000, forms: {latin: [crore, karod], deva: [करोड़, करोड], tamil: []}}

@@ -1,0 +1,36 @@
+# Function words (not part of the spec's lexicon list; used for fillers stripped by the normalizer and by the Twin's carrier phrases).
+# kind: role (case markers) | connector | currency | verb | filler.
+- {kind: role, forms: {latin: [oda, ota], deva: [], tamil: [ஓட]}}
+- {kind: role, forms: {latin: [kku, ku], deva: [], tamil: [க்கு]}}
+- {kind: role, forms: {latin: [kitta], deva: [], tamil: [கிட்ட]}}
+- {kind: role, forms: {latin: [la], deva: [], tamil: [ல]}}
+- {kind: role, forms: {latin: [idam], deva: [], tamil: [இடம்]}}
+- {kind: connector, forms: {latin: [mattum, and], deva: [], tamil: [மட்டும்]}}
+- {kind: connector, forms: {latin: [appuram], deva: [], tamil: [அப்புறம்]}}
+- {kind: currency, forms: {latin: [rubaai, rupaai, rupees, rs, rupee], deva: [], tamil: [ரூபாய், ₹]}}
+- {kind: verb, forms: {latin: [pannunga, pannu], deva: [], tamil: [பண்ணுங்க, பண்ணு]}}
+- {kind: verb, forms: {latin: [podunga, pottu], deva: [], tamil: [போடுங்க, போட்டு]}}
+- {kind: verb, forms: {latin: [ezhuthunga], deva: [], tamil: [எழுதுங்க]}}
+- {kind: filler, forms: {latin: [irukku], deva: [], tamil: [இருக்கு]}}
+- {kind: filler, forms: {latin: [ippo], deva: [], tamil: [இப்போ]}}
+- {kind: filler, forms: {latin: [dhaan], deva: [], tamil: [தான்]}}
+- {kind: filler, forms: {latin: [um, uh, hmm], deva: [], tamil: [உம்]}}
+- {kind: filler, forms: {latin: [paisa, panam], deva: [], tamil: [பணம்]}}
+- {kind: filler, forms: {latin: [entry], deva: [], tamil: [என்ட்ரி]}}
+- {kind: filler, forms: {latin: [account], deva: [], tamil: [அக்கவுண்ட்]}}
+- {kind: filler, forms: {latin: [please], deva: [], tamil: [ப்ளீஸ்]}}
+- {kind: filler, forms: {latin: [enga, engal], deva: [], tamil: [எங்க]}}
+- {kind: filler, forms: {latin: [avanga, avar], deva: [], tamil: [அவங்க, அவர்]}}
+- {kind: filler, forms: {latin: [ippadi], deva: [], tamil: [இப்படி]}}
+# Words of the Twin's carrier phrases (twin/scripts.py): a caller says them, so the normalizer must know them or they would read as party names.
+- {kind: filler, forms: {latin: [date], deva: [], tamil: [டேட்]}}
+- {kind: verb, forms: {latin: [sonnaanga], deva: [], tamil: [சொன்னாங்க]}}
+- {kind: role, forms: {latin: [nu], deva: [], tamil: [னு]}}
+- {kind: verb, forms: {latin: [kuduthaanga], deva: [], tamil: [கொடுத்தாங்க]}}
+- {kind: filler, forms: {latin: [payment], deva: [], tamil: [பேமெண்ட்]}}
+- {kind: verb, forms: {latin: [anuppitaanga], deva: [], tamil: [அனுப்பிட்டாங்க]}}
+- {kind: role, forms: {latin: [irundhu], deva: [], tamil: [இருந்து]}}
+- {kind: verb, forms: {latin: [vainga], deva: [], tamil: [வைங்க]}}
+- {kind: verb, forms: {latin: [note], deva: [], tamil: [நோட்]}}
+- {kind: verb, forms: {latin: [pannaanga], deva: [], tamil: [பண்ணாங்க]}}
+- {kind: verb, forms: {latin: [pesinen], deva: [], tamil: [பேசினேன்]}}

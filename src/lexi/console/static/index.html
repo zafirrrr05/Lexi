@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LEXI · certified autonomy</title>
+<link rel="stylesheet" href="/static/vendor/uPlot.min.css">
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header id="bar">
+  <div class="brand"><b>Lexi</b></div>
+  <div class="title">Ledger Execution X-risk Intercept<span>certified autonomy for voice agents</span></div>
+  <div class="vitals">
+    <div class="vital"><small>Mode</small><b id="v-mode">—</b></div>
+    <div class="vital"><small>Scorer</small><b id="v-scorer">—</b></div>
+    <div class="vital" id="head"><small>Audit chain head</small><b id="v-head">—</b></div>
+    <span class="pill" id="p-audit"><i></i>audit</span>
+    <span class="pill" id="p-ledger"><i></i>ledger</span>
+    <div class="vital"><small>Lease</small><b id="v-lease">—</b></div>
+    <svg id="lease" viewBox="0 0 36 36"><circle class="track" cx="18" cy="18" r="15"/><circle class="arc" cx="18" cy="18" r="15" stroke-dasharray="94.25" stroke-dashoffset="94.25"/></svg>
+    <span class="mono dim"><i class="live-dot" id="live"></i><span id="v-stream">connecting</span></span>
+  </div>
+</header>
+
+<nav id="rail">
+  <button data-s="s1" class="on"><span class="n">1</span><span class="t">Live call</span></button>
+  <button data-s="s2"><span class="n">2</span><span class="t">Certificates</span></button>
+  <button data-s="s3"><span class="n">3</span><span class="t">Risk</span></button>
+  <button data-s="s4"><span class="n">4</span><span class="t">Queue</span><span class="badge hidden" id="badge">0</span></button>
+  <button data-s="s5"><span class="n">5</span><span class="t">Scenario</span></button>
+  <button data-s="s6"><span class="n">6</span><span class="t">Eval</span></button>
+  <button data-s="s7"><span class="n">7</span><span class="t">Softphone</span></button>
+  <span class="grow"></span>
+  <button id="open-end" class="endcard"><span class="n">∎</span><span class="t">End card</span></button>
+</nav>
+
+<main id="main">
+  <section class="screen on" id="s1">
+    <div class="h"><h2>Live call</h2><span class="kicker">LEXI on the left · the naive baseline, same calls, on the right</span></div>
+    <p class="kicker-line" id="headline"></p>
+    <div class="split">
+      <div>
+        <div class="calls" id="calls"></div>
+        <div class="box" id="callbox"><div class="empty">No call yet. Start the stream on Scenario control.</div></div>
+        <div class="hook" id="hook"></div>
+      </div>
+      <div>
+        <div class="box shadow">
+          <div class="cap">Naive baseline · shadow<span class="right">commits when the least confident word ≥ θ<sub>b</sub></span></div>
+          <div class="note">It never asks. It posts what it heard.</div>
+          <div id="ghost"></div>
+          <div class="counters" id="counters"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen" id="s2">
+    <div class="h"><h2>Certificate board</h2><span class="kicker">one certificate per language × channel quality × tier</span>
+      <span class="right"><span class="mono dim" id="reg-line"></span></span></div>
+    <div class="board" id="board"></div>
+  </section>
+
+  <section class="screen" id="s3">
+    <div class="h"><h2>Risk and autonomy</h2><span class="kicker">computed from the audit stream and gold labels</span>
+      <span class="right"><button class="btn sm" id="reset">Reset counters</button></span></div>
+    <div class="kpis" id="kpis"></div>
+    <div class="two">
+      <div class="box"><div class="cap">LEXI against the baseline shadow</div><table class="vs" id="vs"></table></div>
+      <div class="box"><div class="cap">Net entries posted<span class="right">credit − debit, ₹</span></div><table class="balances" id="balances"></table></div>
+    </div>
+    <div class="box" style="margin-top:16px"><div class="cap">Wrong commits, cumulative<span class="right">per finished call</span></div><div class="pad"><div id="cum" class="chart"></div><div class="legend"><span><i style="background:var(--lexi)"></i>LEXI</span><span><i style="background:var(--ghost)"></i>baseline</span></div></div></div>
+  </section>
+
+  <section class="screen" id="s4">
+    <div class="h"><h2>Escalation queue</h2><span class="kicker">a human resolves what the system will not commit</span></div>
+    <div class="queue">
+      <div class="box"><div class="cap">Open tickets</div><div id="tickets"></div></div>
+      <div class="box" id="ticket"><div class="empty">Select a ticket.</div></div>
+    </div>
+  </section>
+
+  <section class="screen" id="s5">
+    <div class="h"><h2>Scenario control</h2><span class="kicker">commands go to the caller twin only</span></div>
+    <div class="ctl">
+      <div>
+        <div class="box"><div class="cap">Scenario</div><div class="pad">
+          <div class="scn" id="scn"></div>
+          <div class="row" style="margin-top:16px">
+            <label class="dim">Calls / min <input type="number" id="rate" min="1" max="600" value="60" style="width:80px"></label>
+            <label class="dim">Time × <input type="number" id="speed" min="1" max="100" value="1" style="width:70px"></label>
+            <button class="btn primary" id="go">Start stream</button>
+            <button class="btn danger" id="stop">Stop</button>
+          </div>
+          <p class="dim" id="speed-note" style="margin:10px 0 0;font-size:12px"></p>
+          <p class="dim" style="margin:10px 0 0;font-size:12px">Start the stream on Reference traffic, then click a shift while it runs to inject it. Rates between 40 and 80 calls / min keep a laptop comfortable.</p>
+        </div></div>
+      </div>
+      <div>
+        <div class="box"><div class="cap">Caller twin</div><div class="pad"><dl class="kv" id="twin"></dl></div></div>
+        <div class="box" style="margin-top:16px"><div class="cap">Recertification<span class="right">post-onset labels against n<sub>target</sub></span></div><div id="recert"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen" id="s6">
+    <div class="h"><h2>Evaluation</h2><span class="kicker">latest report from results/</span><span class="right"><select id="report-pick"></select></span></div>
+    <div id="eval"><div class="empty">No report yet. Run <span class="mono">lexi bench</span>.</div></div>
+  </section>
+
+  <section class="screen" id="s7">
+    <div class="h"><h2>Softphone</h2><span class="kicker">speak to the agent from this browser</span></div>
+    <div class="box phone"><div class="pad" id="phone"></div></div>
+  </section>
+</main>
+
+<aside class="drawer" id="drawer"></aside>
+<div id="endcard"></div>
+<div id="toast"></div>
+<script src="/static/vendor/uPlot.iife.min.js"></script>
+<script src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+# Honorifics stripped before party matching (C3 PARTY).
+- {forms: {latin: [ji], deva: [जी], tamil: []}}
+- {forms: {latin: [bhai, bhaiya], deva: [भाई, भैया], tamil: []}}
+- {forms: {latin: [sahab, saab, sahib], deva: [साहब, साब], tamil: []}}
+- {forms: {latin: [sir], deva: [सर], tamil: []}}
+- {forms: {latin: [madam], deva: [मैडम], tamil: []}}
+- {forms: {latin: [seth, sethji], deva: [सेठ], tamil: []}}
+- {forms: {latin: [lala], deva: [लाला], tamil: []}}
+- {forms: {latin: [babu], deva: [बाबू], tamil: []}}
+- {forms: {latin: [didi], deva: [दीदी], tamil: []}}

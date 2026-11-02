@@ -1,0 +1,7 @@
+# Fraction words (4 amount grammar). kind: dedh=1.5, dhai=2.5, sawa=1.25 act as a multiplier before a scale;
+# saade (+0.5) and paune (-0.25) adjust the numeral that follows. value is the number used by the grammar.
+- {kind: dedh, value: 1.5, forms: {latin: [dedh, dedha], deva: [डेढ़, डेढ], tamil: []}}
+- {kind: dhai, value: 2.5, forms: {latin: [dhai, dhaai], deva: [ढाई], tamil: []}}
+- {kind: sawa, value: 1.25, forms: {latin: [sawa, sava], deva: [सवा], tamil: []}}
+- {kind: saade, value: 0.5, forms: {latin: [saade, saadhe, sade], deva: [साढ़े, साढे], tamil: []}}
+- {kind: paune, value: -0.25, forms: {latin: [paune, pone], deva: [पौने], tamil: []}}

@@ -1,0 +1,43 @@
+# Action catalog, tiers, risk budgets, hard limits and bucket boundaries (spec 4.3-4.7).
+# The sha256 of this file is recorded as catalog_version; changing it invalidates every certificate.
+schema: 1
+profile: STANDARD          # FULL | STANDARD | LEAN (4.7)
+
+profiles:
+  FULL:     {languages: [hi, ta], alpha: {T1: 0.02, T2: 0.05}, calls: 15000}
+  STANDARD: {languages: [hi, ta], alpha: {T1: 0.05, T2: 0.10}, calls: 7000}
+  LEAN:     {languages: [hi],     alpha: {T1: 0.05},           calls: 2500}   # T2 actions use T1
+
+delta: 0.025               # per certificate (4.4)
+rungs: [1.0, 0.5, 0.25]    # RG0, RG1, RG2 = alpha, alpha/2, alpha/4
+hedged: {WATCH: 0.5, ALERT: 0.25}   # factors on RG0 lambda when the stricter rung is absent (C6 step 6)
+
+grid:                      # CERT-v1 (10.3): lambda_i = alpha_r * 2^(i/steps_per_octave)
+  points: 17
+  steps_per_octave: 4
+  max_lambda: 0.5
+  n_target_errors: 2       # n_target uses the 2-error column
+
+actions:
+  CREDIT_ENTRY:   {tier: T1, slots: [party, amount],       critical: [intent, party, amount]}
+  DEBIT_ENTRY:    {tier: T1, slots: [party, amount],       critical: [intent, party, amount]}
+  PROMISE_TO_PAY: {tier: T2, slots: [party, amount, date], critical: [intent, party, amount, date]}
+  RESCHEDULE_DUE: {tier: T2, slots: [party, date],         critical: [intent, party, date]}
+
+limits:                    # deterministic, independent of every model (4.5)
+  max_autonomous_amount_inr: 25000
+  hard_max_inr: 100000
+  duplicate_window_s: 120
+  max_entries_per_session: 10
+  max_probes: 2
+  max_turns: 8
+  max_reprompts: 2
+
+cqi:                       # 4.6
+  q3_snr_db: 8.0
+  q3_plc: 0.03
+  q1_snr_db: 18.0
+  q1_plc: 0.01
+  short_speech_ms: 300
+bandwidth: {wb_above_hz95: 3600}
+profiler_version: prof-1

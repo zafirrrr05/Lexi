@@ -1,0 +1,23 @@
+# SLO thresholds of spec section 11, read by C15. cls MUST = release blocker, TARGET = report and explain.
+RC1:  {cls: MUST,   metric: cert_failed_cells,         op: "<=", value: 1,        desc: "Test CP95 lower bound <= alpha for every active RG0 certificate; at most 1 of 12 cells may fail"}
+RC2:  {cls: MUST,   metric: ece_valid,                 op: "<=", value: 0.02,     desc: "Scorer calibration ECE on Valid"}
+RC3:  {cls: TARGET, metric: wrong_before_containment,  op: "<=", value: 8,        desc: "Median wrong autonomous commits between onset and ALERT/REVOKED at ~25% post-shift risk"}
+RC4:  {cls: MUST,   metric: false_revoke_per_100k,     op: "<=", value: 1,        desc: "S6 null: exact 95% lower bound of false-REVOKE rate per 100,000 labeled commits; false-ALERT <= 1 per 10,000; no REVOKE in the live soak"}
+RC5:  {cls: MUST,   metric: detection_delay_ok,        op: "==", value: true,     desc: "Median ALERT delay (labeled commits) <= 700 @4%, 200 @6%, 70 @10%, 30 @25% (1,000 runs each)"}
+RC6:  {cls: MUST,   metric: hallucinated_values,       op: "==", value: 0,        desc: "Hallucinated values in ActionProposals over 100,000 random EBs"}
+RC7:  {cls: MUST,   metric: replay_mismatches,         op: "==", value: 0,        desc: "1,000 sampled decisions replay bit-identically"}
+RC8:  {cls: MUST,   metric: audit_chain_ok,            op: "==", value: true,     desc: "Audit chain verifies; a one-byte flip fails verification"}
+RC9:  {cls: MUST,   metric: ledger_invariant_breaks,   op: "==", value: 0,        desc: "Ledger invariants under kill -9 cycles, duplicate delivery and receipt-failure injection"}
+RC10: {cls: TARGET, metric: autonomy_t1_q1,            op: ">=", value: 0.60,     desc: "T1 calls committed (direct or after <= 1 probe) in Q1 cells"}
+RC11: {cls: TARGET, metric: wrong_rate_ratio_vs_b1,    op: "<=", value: 0.5,      desc: "Wrong-commit rate at matched autonomy vs B1, 95% interval excluding 1.0"}
+RC12: {cls: TARGET, metric: probes_per_commit,         op: "<=", value: 0.8,      desc: "Mean probes per committed call; escalation rate <= 20% on RTP"}
+L1:   {cls: MUST,   metric: decision_core_p99_ms,      op: "<=", value: 10,       desc: "EB complete to Decision, excluding audit fsync; p50 <= 3 ms"}
+L2:   {cls: MUST,   metric: c3_p99_ms,                 op: "<=", value: 15,       desc: "C3 lattice build, <= 40 tokens"}
+L3:   {cls: MUST,   metric: audit_ack_p99_ms,          op: "<=", value: 5,        desc: "Audit ack p99; ledger PREPARE p99 <= 8 ms (given V11)"}
+L4:   {cls: TARGET, metric: eou_to_audio_fast_p95_s,   op: "<=", value: 1.0,      desc: "EOU to first TTS audio byte, fast path; Evon path p95 <= 1.6 s"}
+L5:   {cls: MUST,   metric: sentinel_update_ms,        op: "<=", value: 1,        desc: "Sentinel update; transition to registry effect <= 100 ms; no torn snapshot"}
+L6:   {cls: TARGET, metric: barge_in_ms,               op: "<=", value: 150,      desc: "Barge-in cancel"}
+AV1:  {cls: MUST,   metric: autonomous_commits_under_fault, op: "==", value: 0,   desc: "Zero autonomous commits while any F1-F16 fault is active"}
+AV2:  {cls: MUST,   metric: commits_after_lease_loss,  op: "==", value: 0,        desc: "Stop C10 -> zero autonomous commits within 10 s"}
+AV3:  {cls: TARGET, metric: concurrency_regression,    op: "<=", value: 0.10,     desc: "20 concurrent sessions: no SLO regresses by more than 10%"}
+CS1:  {cls: TARGET, metric: evon_turn_share,           op: "<=", value: 0.35,     desc: "Evon on <= 35% of turns; credits per call reported"}

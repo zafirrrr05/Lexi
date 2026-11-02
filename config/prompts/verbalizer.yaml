@@ -1,0 +1,31 @@
+# Spoken forms for the digit verbalizer (C8 step 2). Amounts and dates go to Timbre as words, never as digits (V-assumption in docs/PHASE0.md).
+# numerals: value -> spoken word (hi has every value 0-99; ta has 0-19 and the tens, 21-99 are tens + unit); hundreds: ta only, 200-900.
+# scales: 100 / 1000 / 100000 / 10000000. confusable: number pairs that sound alike on a phone line; an amount that contains one is echoed digit by digit.
+confusable: [[13, 30], [14, 40], [15, 50], [16, 60], [17, 70], [18, 80], [19, 90], [35, 45]]
+months: [january, february, march, april, may, june, july, august, september, october, november, december]
+hi:
+  numerals: {
+    0: shunya, 1: ek, 2: do, 3: teen, 4: chaar, 5: paanch, 6: chhah, 7: saat,
+    8: aath, 9: nau, 10: das, 11: gyarah, 12: barah, 13: terah, 14: chaudah, 15: pandrah,
+    16: solah, 17: satrah, 18: atharah, 19: unnis, 20: bees, 21: ikkis, 22: baais, 23: teis,
+    24: chaubis, 25: pachchis, 26: chhabbis, 27: sattaais, 28: atthaais, 29: untis, 30: tees, 31: ikattis,
+    32: battis, 33: taintis, 34: chauntis, 35: paintees, 36: chhattis, 37: saintis, 38: adtis, 39: untalis,
+    40: chalis, 41: iktalis, 42: bayalis, 43: taintalis, 44: chauvalis, 45: paintalis, 46: chhiyalis, 47: saintalis,
+    48: adtalis, 49: unchas, 50: pachas, 51: ikyavan, 52: bavan, 53: tirpan, 54: chauvan, 55: pachpan,
+    56: chhappan, 57: sattavan, 58: atthavan, 59: unsath, 60: saath, 61: iksath, 62: basath, 63: tirsath,
+    64: chaunsath, 65: painsath, 66: chhiyasath, 67: sadsath, 68: adsath, 69: unhattar, 70: sattar, 71: ikhattar,
+    72: bahattar, 73: tihattar, 74: chauhattar, 75: pachhattar, 76: chhihattar, 77: sathattar, 78: athhattar, 79: unyasi,
+    80: assi, 81: ikyasi, 82: bayasi, 83: tirasi, 84: chaurasi, 85: pachasi, 86: chhiyasi, 87: sattasi,
+    88: atthasi, 89: navasi, 90: nabbe, 91: ikyanave, 92: banave, 93: tiranave, 94: chauranave, 95: panchanave,
+    96: chhiyanave, 97: sattanave, 98: atthanave, 99: ninyanave,
+  }
+  scales: {100: sau, 1000: hazaar, 100000: lakh, 10000000: crore}
+ta:
+  numerals: {
+    0: poojyam, 1: onnu, 2: rendu, 3: moonu, 4: naalu, 5: anju, 6: aaru, 7: ezhu,
+    8: ettu, 9: onbadhu, 10: pathu, 11: pathinonnu, 12: pannirendu, 13: pathimoonu, 14: pathinaalu, 15: pathinanju,
+    16: pathinaaru, 17: pathinezhu, 18: pathinettu, 19: pathonbadhu, 20: irubadhu, 30: muppadhu, 40: naarpadhu, 50: aimbadhu,
+    60: arubadhu, 70: ezhubadhu, 80: enbadhu, 90: thonnooru,
+  }
+  hundreds: {200: irunooru, 300: munnooru, 400: naanooru, 500: ainooru, 600: arunooru, 700: ezhunooru, 800: ennooru, 900: thollaayiram}
+  scales: {100: nooru, 1000: aayiram, 100000: latcham, 10000000: kodi}

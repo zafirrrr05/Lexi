@@ -1,0 +1,5 @@
+# Fraction words (4 amount grammar). kind: dedh=1.5, dhai=2.5, sawa=1.25 act as a multiplier before a scale (value is the number
+# used by the grammar). Tamil has no separate saade/paune forms in common speech, so only these three are listed.
+- {kind: dedh, value: 1.5, forms: {latin: [ondrarai, onnarai], deva: [], tamil: [ஒன்றரை]}}
+- {kind: dhai, value: 2.5, forms: {latin: [irandarai, rendarai], deva: [], tamil: [இரண்டரை]}}
+- {kind: sawa, value: 1.25, forms: {latin: [onnekaal, onrekaal], deva: [], tamil: [ஒன்னேகால்]}}

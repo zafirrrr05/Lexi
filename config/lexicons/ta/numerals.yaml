@@ -1,0 +1,38 @@
+# Tamil numerals: 0..19, the tens, and the fused hundreds 200..900. Numbers 21..99 are compositional (tens + unit, additive
+# grammar) and 100/1000/100000 are scales. Each entry: value (int) and forms {latin, deva, tamil}; variants that fold to one phonetic key are listed once.
+- {value: 0, forms: {latin: [poojyam, zero], deva: [], tamil: [பூஜ்யம்]}}
+- {value: 1, forms: {latin: [onnu, ondru, oru], deva: [], tamil: [ஒன்று, ஒரு]}}
+- {value: 2, forms: {latin: [rendu, irandu], deva: [], tamil: [இரண்டு]}}
+- {value: 3, forms: {latin: [moonu, moondru], deva: [], tamil: [மூன்று]}}
+- {value: 4, forms: {latin: [naalu, naangu], deva: [], tamil: [நான்கு]}}
+- {value: 5, forms: {latin: [anju, ainthu], deva: [], tamil: [ஐந்து]}}
+- {value: 6, forms: {latin: [aaru], deva: [], tamil: [ஆறு]}}
+- {value: 7, forms: {latin: [ezhu, yezhu], deva: [], tamil: [ஏழு]}}
+- {value: 8, forms: {latin: [ettu], deva: [], tamil: [எட்டு]}}
+- {value: 9, forms: {latin: [onbadhu, ombadhu], deva: [], tamil: [ஒன்பது]}}
+- {value: 10, forms: {latin: [pathu, patthu], deva: [], tamil: [பத்து]}}
+- {value: 11, forms: {latin: [pathinonnu], deva: [], tamil: [பதினொன்று]}}
+- {value: 12, forms: {latin: [pannirendu], deva: [], tamil: [பன்னிரண்டு]}}
+- {value: 13, forms: {latin: [pathimoonu], deva: [], tamil: [பதின்மூன்று]}}
+- {value: 14, forms: {latin: [pathinaalu], deva: [], tamil: [பதினான்கு]}}
+- {value: 15, forms: {latin: [pathinanju], deva: [], tamil: [பதினைந்து]}}
+- {value: 16, forms: {latin: [pathinaaru], deva: [], tamil: [பதினாறு]}}
+- {value: 17, forms: {latin: [pathinezhu], deva: [], tamil: [பதினேழு]}}
+- {value: 18, forms: {latin: [pathinettu], deva: [], tamil: [பதினெட்டு]}}
+- {value: 19, forms: {latin: [pathonbadhu], deva: [], tamil: [பத்தொன்பது]}}
+- {value: 20, forms: {latin: [irubadhu, irubathi, irupathu], deva: [], tamil: [இருபது, இருபத்து]}}
+- {value: 30, forms: {latin: [muppadhu, muppathi], deva: [], tamil: [முப்பது, முப்பத்து]}}
+- {value: 40, forms: {latin: [naarpadhu, naarpathi], deva: [], tamil: [நாற்பது, நாற்பத்து]}}
+- {value: 50, forms: {latin: [aimbadhu, aimbathi], deva: [], tamil: [ஐம்பது, ஐம்பத்து]}}
+- {value: 60, forms: {latin: [arubadhu, arubathi], deva: [], tamil: [அறுபது, அறுபத்து]}}
+- {value: 70, forms: {latin: [ezhubadhu, ezhubathi], deva: [], tamil: [எழுபது, எழுபத்து]}}
+- {value: 80, forms: {latin: [enbadhu, enbathi], deva: [], tamil: [எண்பது, எண்பத்து]}}
+- {value: 90, forms: {latin: [thonnooru, thonnoothi], deva: [], tamil: [தொண்ணூறு, தொண்ணூற்று]}}
+- {value: 200, forms: {latin: [irunooru], deva: [], tamil: [இருநூறு]}}
+- {value: 300, forms: {latin: [munnooru], deva: [], tamil: [முந்நூறு]}}
+- {value: 400, forms: {latin: [naanooru], deva: [], tamil: [நானூறு]}}
+- {value: 500, forms: {latin: [ainooru], deva: [], tamil: [ஐந்நூறு]}}
+- {value: 600, forms: {latin: [arunooru], deva: [], tamil: [அறுநூறு]}}
+- {value: 700, forms: {latin: [ezhunooru], deva: [], tamil: [எழுநூறு]}}
+- {value: 800, forms: {latin: [ennooru], deva: [], tamil: [எண்ணூறு]}}
+- {value: 900, forms: {latin: [thollaayiram], deva: [], tamil: [தொள்ளாயிரம்]}}

@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lexi"
+version = "1.1.0"
+description = "Voice agent that posts ledger entries only inside a certified error bound."
+requires-python = ">=3.11"
+dynamic = ["dependencies"]
+
+[project.scripts]
+lexi = "lexi.cli:main"
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"] }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+lexi = ["ledger/schema.sql", "labelstore/schema.sql", "console/static/*", "console/static/vendor/*", "console/static/fonts/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "."]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+filterwarnings = ["ignore::DeprecationWarning"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"
+src = ["src", "tests", "scripts"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+ignore = ["E501", "B008", "UP042"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+files = ["src/lexi/common", "src/lexi/evidence", "src/lexi/risk", "src/lexi/gate", "src/lexi/probe", "src/lexi/authority"]
+plugins = ["pydantic.mypy"]
+ignore_missing_imports = true

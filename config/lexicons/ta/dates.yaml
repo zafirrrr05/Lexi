@@ -1,0 +1,29 @@
+# Date words. key REL: days = offsets from the ledger date (first is the primary reading, others are the alternative reading);
+# WEEKDAY: weekday 0=Monday, resolved to the next such day; MONTH: month 1..12; TARIKH: marks a preceding numeral as a day of month.
+# Multi-word forms are matched as token sequences.
+- {key: REL, days: [0], forms: {latin: [inniku, indru, innaiku], deva: [], tamil: [இன்னிக்கு, இன்று]}}
+- {key: REL, days: [1], forms: {latin: [naalaikku, naalai], deva: [], tamil: [நாளைக்கு, நாளை]}}
+- {key: REL, days: [-1], forms: {latin: [nethu, netru], deva: [], tamil: [நேத்து, நேற்று]}}
+- {key: REL, days: [2], forms: {latin: [marunaal], deva: [], tamil: [மறுநாள்]}}
+- {key: REL, days: [7], forms: {latin: [aduththa vaaram, adutha vaaram, next week], deva: [], tamil: [அடுத்த வாரம்]}}
+- {key: REL, days: [30], forms: {latin: [aduththa maadham, adutha maasam, next month], deva: [], tamil: [அடுத்த மாதம்]}}
+- {key: WEEKDAY, weekday: 0, forms: {latin: [thinkal, monday], deva: [], tamil: [திங்கள்]}}
+- {key: WEEKDAY, weekday: 1, forms: {latin: [sevvai, tuesday], deva: [], tamil: [செவ்வாய்]}}
+- {key: WEEKDAY, weekday: 2, forms: {latin: [budhan, wednesday], deva: [], tamil: [புதன்]}}
+- {key: WEEKDAY, weekday: 3, forms: {latin: [viyaazhan, thursday], deva: [], tamil: [வியாழன்]}}
+- {key: WEEKDAY, weekday: 4, forms: {latin: [velli, friday], deva: [], tamil: [வெள்ளி]}}
+- {key: WEEKDAY, weekday: 5, forms: {latin: [sani, saturday], deva: [], tamil: [சனி]}}
+- {key: WEEKDAY, weekday: 6, forms: {latin: [njaayiru, gnayiru, sunday], deva: [], tamil: [ஞாயிறு]}}
+- {key: MONTH, month: 1, forms: {latin: [janavari, january], deva: [], tamil: [ஜனவரி]}}
+- {key: MONTH, month: 2, forms: {latin: [pibravari, february], deva: [], tamil: [பிப்ரவரி]}}
+- {key: MONTH, month: 3, forms: {latin: [march, march], deva: [], tamil: [மார்ச்]}}
+- {key: MONTH, month: 4, forms: {latin: [april, april], deva: [], tamil: [ஏப்ரல்]}}
+- {key: MONTH, month: 5, forms: {latin: [mey, may], deva: [], tamil: [மே]}}
+- {key: MONTH, month: 6, forms: {latin: [june, june], deva: [], tamil: [ஜூன்]}}
+- {key: MONTH, month: 7, forms: {latin: [july, july], deva: [], tamil: [ஜூலை]}}
+- {key: MONTH, month: 8, forms: {latin: [august, august], deva: [], tamil: [ஆகஸ்ட்]}}
+- {key: MONTH, month: 9, forms: {latin: [september, september], deva: [], tamil: [செப்டம்பர்]}}
+- {key: MONTH, month: 10, forms: {latin: [october, october], deva: [], tamil: [அக்டோபர்]}}
+- {key: MONTH, month: 11, forms: {latin: [november, november], deva: [], tamil: [நவம்பர்]}}
+- {key: MONTH, month: 12, forms: {latin: [december, december], deva: [], tamil: [டிசம்பர்]}}
+- {key: TARIKH, forms: {latin: [thethi, theedhi, thedhi], deva: [], tamil: [தேதி]}}

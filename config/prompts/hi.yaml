@@ -1,0 +1,36 @@
+# Speech templates, Hindi (C8). Romanised Hindi, the way the spec writes the lines. {party} {amount} {date} {o1} {o2} are filled by the planner.
+# These phrases are hand written; a native speaker should review them before any real deployment (docs/DECISIONS.md D-004).
+lang: hi
+voice: Nalini
+probe:
+  CONTRAST:
+    amount: "Kitna? Pehla {o1}, ya doosra {o2}?"
+    party: "Kaun? Pehla {o1}, ya doosra {o2}?"
+    date: "Kab tak? Pehla {o1}, ya doosra {o2}?"
+    dup: "Abhi likha hai. Naya entry likhun, ya wahi purana?"
+  REASK:
+    amount: "Rakam phir se boliye."
+    party: "Kis party ka? Naam phir se boliye."
+    date: "Kab tak? Tareekh phir se boliye."
+  READBACK:
+    CREDIT_ENTRY: "{party}, {amount} jama, sahi?"
+    DEBIT_ENTRY: "{party}, {amount} udhaar, sahi?"
+    PROMISE_TO_PAY: "{party}, {amount}, {date} tak, sahi?"
+    RESCHEDULE_DUE: "{party}, {date} tak, sahi?"
+    dup: "{party}, {amount}, abhi likha hai. Dobara likhun?"
+  INTENT_CONTRAST: "Jama karna hai ya udhaar likhna hai?"
+reprompt:
+  generic: "Maaf kijiye, samajh nahi aaya. Kripya phir se boliye."
+  party: "Kis party ka entry hai? Naam boliye."
+  amount: "Kitne rupaye? Rakam boliye."
+  date: "Kab tak? Tareekh boliye."
+escalate: "Ek minute, main aapko apne saathi se jodta hoon."
+refuse: "Maaf kijiye, itni badi rakam main nahi likh sakta."
+closing: "Theek hai."
+receipt:
+  CREDIT_ENTRY: "{party} ke khaate mein {amount} jama kar diya. Galat ho to 'galat' boliye."
+  DEBIT_ENTRY: "{party} ke khaate mein {amount} udhaar likh diya. Galat ho to 'galat' boliye."
+  PROMISE_TO_PAY: "{party} ka {amount}, {date} tak dene ka vaada likh liya. Galat ho to 'galat' boliye."
+  RESCHEDULE_DUE: "{party} ki tareekh {date} kar di. Galat ho to 'galat' boliye."
+undone: "Theek hai, wo entry hata di."
+failed: "Maaf kijiye, entry nahi ho saki. Main aapko apne saathi se jodta hoon."

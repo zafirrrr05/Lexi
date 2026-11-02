@@ -1,0 +1,17 @@
+# Drift sentinel parameters (spec C10, 10.5, 10.6).
+m1:
+  eps_grid: [0.05, 0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40, 0.45, 0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90, 0.95]
+  watch: 1000.0
+  alert: 10000.0
+  revoke: 100000.0
+  clear_below: 20          # WATCH -> HEALTHY when SRM1 < 20 for clear_decisions consecutive decisions
+  clear_decisions: 200
+m2:
+  nu_grid: [0.5, 1, 2, 4, 8, 16]
+  alert: 10000.0             # no WATCH tier by design (10.5 d)
+  revoke: 100000.0
+staleness: {min_commits: 50, no_label_s: 1800}
+canary: {rate_per_min: 6.0, duration_s: 900}   # spec C10 leaves the canary rate open; 6/min ~ 1 labeled commit per cell every 10 s while in WATCH or worse
+checkpoint_every: 100
+stationarity_threshold: 1000.0   # C6 step 4
+seed: 20261004

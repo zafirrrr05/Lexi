@@ -1,0 +1,10 @@
+# Answer words for probe answers (C8). cls: YES NO RIGHT WRONG ORD1 ORD2 UNDO NEW SAME.
+- {cls: 'YES', forms: {latin: [haan, haa, han, bilkul, ok, okay], deva: [हाँ, हां, बिल्कुल], tamil: []}}
+- {cls: 'NO', forms: {latin: [nahi, nahin, na], deva: [नहीं, नही, ना], tamil: []}}
+- {cls: RIGHT, forms: {latin: [sahi, theek, correct], deva: [सही, ठीक], tamil: []}}
+- {cls: WRONG, forms: {latin: [galat, ghalat, wrong], deva: [गलत, ग़लत], tamil: []}}
+- {cls: ORD1, forms: {latin: [pehla, pahla, pehle, pahle, pehli, first], deva: [पहला, पहले, पहली], tamil: []}}
+- {cls: ORD2, forms: {latin: [doosra, dusra, doosre, dusre, doosri, second], deva: [दूसरा, दूसरे, दूसरी], tamil: []}}
+- {cls: UNDO, forms: {latin: [ruko, wapas, undo, cancel, hatao], deva: [रुको, वापस, हटाओ], tamil: []}}
+- {cls: NEW, forms: {latin: [naya, nayi, nayee, new, alag], deva: [नया, नई, नयी, अलग], tamil: []}}
+- {cls: SAME, forms: {latin: [wahi, vahi, same, purana], deva: [वही, पुराना], tamil: []}}

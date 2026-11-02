@@ -1,0 +1,36 @@
+# Speech templates, Tamil (C8). Romanised Tamil. {party} {amount} {date} {o1} {o2} are filled by the planner.
+# These phrases are hand written; a native speaker should review them before any real deployment (docs/DECISIONS.md D-004).
+lang: ta
+voice: Nalini
+probe:
+  CONTRAST:
+    amount: "Evvalavu? Mudhal {o1}, illa irandaavadhu {o2}?"
+    party: "Yaaru? Mudhal {o1}, illa irandaavadhu {o2}?"
+    date: "Eppo varai? Mudhal {o1}, illa irandaavadhu {o2}?"
+    dup: "Ippodhaan ezhudhirukken. Pudhu entry ezhudhanuma, illa adhe thaana?"
+  REASK:
+    amount: "Evvalavu? Marubadiyum sollunga."
+    party: "Yaaru? Peyar marubadiyum sollunga."
+    date: "Eppo varai? Thedhi marubadiyum sollunga."
+  READBACK:
+    CREDIT_ENTRY: "{party}, {amount} jama, seriya?"
+    DEBIT_ENTRY: "{party}, {amount} kadan, seriya?"
+    PROMISE_TO_PAY: "{party}, {amount}, {date} varai, seriya?"
+    RESCHEDULE_DUE: "{party}, {date} varai, seriya?"
+    dup: "{party}, {amount}, ippodhaan ezhudhirukken. Marubadiyum ezhudhanuma?"
+  INTENT_CONTRAST: "Jama pannanuma, illa kadan ezhudhanuma?"
+reprompt:
+  generic: "Mannikkanum, puriyala. Marubadiyum sollunga."
+  party: "Yaarodadhu entry? Peyar sollunga."
+  amount: "Evvalavu rubai? Thogai sollunga."
+  date: "Eppo varai? Thedhi sollunga."
+escalate: "Oru nimisham, en sahaavai ungaludan inaikkiren."
+refuse: "Mannikkanum, ivvalavu periya thogaiyai nan ezhudha mudiyaadhu."
+closing: "Seri."
+receipt:
+  CREDIT_ENTRY: "{party} kanakkula {amount} jama pannitten. Thappu-naa 'thappu' nu sollunga."
+  DEBIT_ENTRY: "{party} kanakkula {amount} kadan ezhudhitten. Thappu-naa 'thappu' nu sollunga."
+  PROMISE_TO_PAY: "{party} {date} varai {amount} tharuvaanga nu ezhudhitten. Thappu-naa 'thappu' nu sollunga."
+  RESCHEDULE_DUE: "{party} oda thedhi {date} nu maathitten. Thappu-naa 'thappu' nu sollunga."
+undone: "Seri, andha entry-ya eduthuttaen."
+failed: "Mannikkanum, entry pannamudiyala. En sahaavai ungaludan inaikkiren."

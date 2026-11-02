@@ -1,0 +1,7 @@
+# Repair markers: a marker within 6 tokens after an entity makes the next entity of the same type the post-repair reading (C3 step 4).
+- {forms: {latin: [illa illa, illai illai], deva: [], tamil: [இல்ல இல்ல]}}
+- {forms: {latin: [matlab], deva: [], tamil: [மட்லப்]}}
+- {forms: {latin: [sorry], deva: [], tamil: [சாரி]}}
+- {forms: {latin: [adhaavadhu], deva: [], tamil: [அதாவது]}}
+- {forms: {latin: [oru nimisham], deva: [], tamil: [ஒரு நிமிஷம்]}}
+- {forms: {latin: [correction], deva: [], tamil: [கரெக்ஷன்]}}

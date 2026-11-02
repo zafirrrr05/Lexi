@@ -1,0 +1,64 @@
+# Function words (not part of the spec's lexicon list; used for fillers stripped by the normalizer and by the Twin's carrier phrases).
+# kind: role (case markers) | connector | currency | verb | filler.
+- {kind: role, forms: {latin: [ka], deva: [का], tamil: []}}
+- {kind: role, forms: {latin: [ke], deva: [के], tamil: []}}
+- {kind: role, forms: {latin: [ki], deva: [की], tamil: []}}
+- {kind: role, forms: {latin: [ko], deva: [को], tamil: []}}
+- {kind: role, forms: {latin: [se], deva: [से], tamil: []}}
+- {kind: role, forms: {latin: [ne], deva: [ने], tamil: []}}
+- {kind: role, forms: {latin: [mein, me], deva: [में], tamil: []}}
+- {kind: role, forms: {latin: [par], deva: [पर], tamil: []}}
+- {kind: role, forms: {latin: [tak], deva: [तक], tamil: []}}
+- {kind: connector, forms: {latin: [aur, and], deva: [और], tamil: []}}
+- {kind: connector, forms: {latin: [ya], deva: [या], tamil: []}}
+- {kind: currency, forms: {latin: [rupaye, rupaiye, rupees, rs, rupee], deva: [रुपये, रुपए, ₹], tamil: []}}
+- {kind: verb, forms: {latin: [kar, karo, karna], deva: [कर, करो, करना], tamil: []}}
+- {kind: verb, forms: {latin: [de, dena, dijiye], deva: [दे, देना, दीजिये], tamil: []}}
+- {kind: filler, forms: {latin: [hai], deva: [है], tamil: []}}
+- {kind: filler, forms: {latin: [hain], deva: [हैं], tamil: []}}
+- {kind: filler, forms: {latin: [tha, thi], deva: [था, थी], tamil: []}}
+- {kind: filler, forms: {latin: [gaya, gaye, gayi], deva: [गया, गए, गयी], tamil: []}}
+- {kind: filler, forms: {latin: [abhi], deva: [अभी], tamil: []}}
+- {kind: filler, forms: {latin: [bas], deva: [बस], tamil: []}}
+- {kind: filler, forms: {latin: [ye, yeh], deva: [ये, यह], tamil: []}}
+- {kind: filler, forms: {latin: [wo, woh], deva: [वो, वह], tamil: []}}
+- {kind: filler, forms: {latin: [paise, paisa], deva: [पैसे, पैसा], tamil: []}}
+- {kind: filler, forms: {latin: [please], deva: [प्लीज़], tamil: []}}
+- {kind: filler, forms: {latin: [entry], deva: [एंट्री], tamil: []}}
+- {kind: filler, forms: {latin: [account], deva: [अकाउंट], tamil: []}}
+- {kind: filler, forms: {latin: [party], deva: [पार्टी], tamil: []}}
+- {kind: filler, forms: {latin: [mera, meri, mere], deva: [मेरा, मेरी, मेरे], tamil: []}}
+- {kind: filler, forms: {latin: [uska, unka, unke], deva: [उसका, उनका, उनके], tamil: []}}
+- {kind: filler, forms: {latin: [zara], deva: [ज़रा], tamil: []}}
+- {kind: filler, forms: {latin: [um, uh, hmm], deva: [अम, हम्म], tamil: []}}
+# Words of the Twin's carrier phrases (twin/scripts.py): a caller says them, so the normalizer must know them or they would read as party names.
+- {kind: filler, forms: {latin: [date], deva: [डेट], tamil: []}}
+- {kind: verb, forms: {latin: [lo], deva: [लो], tamil: []}}
+- {kind: verb, forms: {latin: [kiya], deva: [किया], tamil: []}}
+- {kind: filler, forms: {latin: [naam], deva: [नाम], tamil: []}}
+- {kind: filler, forms: {latin: [payment], deva: [पेमेंट], tamil: []}}
+- {kind: verb, forms: {latin: [bola], deva: [बोला], tamil: []}}
+- {kind: role, forms: {latin: [taraf], deva: [तरफ], tamil: []}}
+- {kind: filler, forms: {latin: [dekho], deva: [देखो], tamil: []}}
+- {kind: verb, forms: {latin: [likhna], deva: [लिखना], tamil: []}}
+- {kind: filler, forms: {latin: [time], deva: [टाइम], tamil: []}}
+- {kind: verb, forms: {latin: [bheje], deva: [भेजे], tamil: []}}
+- {kind: verb, forms: {latin: [kijiye], deva: [कीजिए, कीजिये], tamil: []}}
+- {kind: filler, forms: {latin: [hue], deva: [हुए], tamil: []}}
+- {kind: filler, forms: {latin: [aa], deva: [आ], tamil: []}}
+- {kind: role, forms: {latin: [yahan], deva: [यहाँ, यहां], tamil: []}}
+- {kind: filler, forms: {latin: [ho], deva: [हो], tamil: []}}
+- {kind: verb, forms: {latin: [bhej], deva: [भेज], tamil: []}}
+- {kind: filler, forms: {latin: [khate], deva: [खाते], tamil: []}}
+- {kind: verb, forms: {latin: [daalo], deva: [डालो], tamil: []}}
+- {kind: verb, forms: {latin: [liya], deva: [लिया], tamil: []}}
+- {kind: verb, forms: {latin: [chadhao], deva: [चढ़ाओ], tamil: []}}
+- {kind: verb, forms: {latin: [jodo], deva: [जोड़ो], tamil: []}}
+- {kind: filler, forms: {latin: [saman], deva: [सामान], tamil: []}}
+- {kind: verb, forms: {latin: [note], deva: [नोट], tamil: []}}
+- {kind: verb, forms: {latin: [kaha], deva: [कहा], tamil: []}}
+- {kind: filler, forms: {latin: [baat], deva: [बात], tamil: []}}
+- {kind: filler, forms: {latin: [hui], deva: [हुई], tamil: []}}
+- {kind: filler, forms: {latin: [pakka], deva: [पक्का], tamil: []}}
+- {kind: filler, forms: {latin: [milega], deva: [मिलेगा], tamil: []}}
+- {kind: filler, forms: {latin: [thoda], deva: [थोड़ा], tamil: []}}

@@ -1,0 +1,14 @@
+# Groups of tokens that sound alike on a narrowband line (17/70, 15/50 ...); members are phonetic neighbours of each other.
+groups:
+  - [pathinezhu, ezhubadhu]
+  - [pathinanju, aimbadhu]
+  - [pathinaalu, naarpadhu]
+  - [pathimoonu, muppadhu]
+  - [pathinaaru, arubadhu]
+  - [pathinettu, enbadhu]
+  - [pathonbadhu, thonnooru]
+  - [irandu, irandarai]
+  - [anju, ainooru]
+  - [aaru, arunooru]
+  - [ezhu, ezhunooru]
+  - [ettu, ennooru]

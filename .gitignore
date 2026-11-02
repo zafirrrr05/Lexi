@@ -1,0 +1,43 @@
+# environment
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+*.egg-info/
+build/
+dist/
+.coverage
+coverage.xml
+htmlcov/
+
+# runtime data (rebuilt by `make bootstrap`)
+data/
+
+# provider secrets
+.env
+.env.*
+!.env.example
+*.key
+
+# delivery archives (including split ZIP parts)
+*.zip
+*.zip.*
+
+# local operating system and editor files
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+*.swp
+*.swo
+
+# source-of-truth documents supplied with the task (kept locally, not versioned)
+docs/LEXI_SPEC.txt
+docs/claude.md
+docs/implementation.md
+docs/spec.md
+docs/Lexi_Architecture_diagram.pdf
