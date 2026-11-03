@@ -54,6 +54,11 @@ def test_bootstrap_resamples_scripts_not_calls():
     assert lo <= 0.5 <= hi
 
 
+def test_bootstrap_empty_collection():
+    lo, hi = bootstrap([], lambda x: x[0], lambda xs: 0.0, np.random.default_rng(1))
+    assert (lo, hi) == (0.0, 0.0)
+
+
 def test_unmeasured_slo_rows_are_none_and_block_verification():
     slo = {"R1": {"cls": "MUST", "metric": "a", "op": "<=", "value": 1, "desc": ""}, "R2": {"cls": "TARGET", "metric": "b", "op": ">=", "value": 0.6, "desc": ""}}
     r = build("t", {}, {"a": 0}, slo)

@@ -24,6 +24,8 @@ def bootstrap(items: Sequence[T], group: Callable[[T], str], stat: Callable[[lis
     for x in items:
         by.setdefault(group(x), []).append(x)
     scripts = list(by)
+    if not scripts:
+        return 0.0, 0.0
     draws = [stat([x for i in rng.integers(0, len(scripts), len(scripts)) for x in by[scripts[i]]]) for _ in range(n_boot)]
     return float(np.percentile(draws, 2.5)), float(np.percentile(draws, 97.5))
 

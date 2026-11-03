@@ -21,6 +21,8 @@ def _keys(p: PartyView) -> list[str]:
 
 def party_candidates(window: str, registry: list[PartyView]) -> tuple[list[Candidate], float]:
     """Top-K registry matches plus OUT_OF_REGISTRY; second value is the best similarity."""
+    if not registry:
+        return [Candidate(value=OOV, p=1.0)], 0.0
     dist = {p.id: min(wdist(window, k) for k in _keys(p)) for p in registry}
     ranked = sorted(dist.items(), key=lambda kv: (kv[1], kv[0]))[:K]
     best = 1.0 - ranked[0][1]

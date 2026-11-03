@@ -49,6 +49,15 @@ def test_party_match_and_out_of_registry():
     assert top("ramesh ka paanch sau jama", "PARTY") == "OUT_OF_REGISTRY"
 
 
+def test_party_match_empty_registry():
+    from tests.helpers import VIEW
+
+    empty_view = VIEW.model_copy(update={"parties": []})
+    eb = EVIDENCE.build(turn("sharma ji ka paanch sau jama", view=empty_view))
+    parties = eb.lattice.of_type("PARTY")
+    assert parties and parties[0].candidates[0].value == "OUT_OF_REGISTRY"
+
+
 def test_party_carries_ledger_context():
     eb = EVIDENCE.build(turn("verma ko paanch sau udhaar"))
     assert eb.prior_context["P02"].display == "Verma Traders" and "OUT_OF_REGISTRY" not in eb.prior_context

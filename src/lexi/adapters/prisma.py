@@ -172,7 +172,10 @@ class PrismaSession:
         headers = {"x-api-key-id": os.environ.get(cfg["key_env"], ""), "lang_code": cfg["lang_code"][self.lang or "hi"],
                    "x-sample-rate": str(cfg["sample_rate"]), "x-format": "verbatim"}
         try:
-            self._ws = await websockets.connect(cfg["url"], additional_headers=headers, open_timeout=cfg.get("connect_timeout_s", 3))
+            proxy = None if ("127.0.0.1" in cfg["url"] or "localhost" in cfg["url"]) else True
+            self._ws = await websockets.connect(
+                cfg["url"], additional_headers=headers, open_timeout=cfg.get("connect_timeout_s", 3), proxy=proxy
+            )
         except (OSError, websockets.WebSocketException) as e:
             raise ProviderError(f"prisma: {e}") from e
         self._reader = asyncio.create_task(self._read())

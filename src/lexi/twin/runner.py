@@ -82,8 +82,11 @@ class TwinRunner:
         rng = np.random.default_rng(plan.seed)
         reaction = random.Random(plan.seed + 1)
         uri = f"{self.url}?session_id={plan.call_id}&account={plan.account.account}&lang={s.lang}" + ("&collect=true" if collect else "")
+        proxy = None if ("127.0.0.1" in uri or "localhost" in uri) else True
         try:
-            async with asyncio.timeout(120 / self.speed + 60), websockets.connect(uri, max_size=None, open_timeout=10, compression=None, ping_interval=None) as ws:
+            async with asyncio.timeout(120 / self.speed + 60), websockets.connect(
+                uri, max_size=None, open_timeout=10, compression=None, ping_interval=None, proxy=proxy
+            ) as ws:
                 line = _Line(ws, self.speed, LineNoise(plan.channel, rng, await self._babble_source()))
                 pump = asyncio.create_task(line.run())
                 try:

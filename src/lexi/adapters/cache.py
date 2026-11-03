@@ -23,7 +23,11 @@ class ProviderCache:
         self.mode = mode
         self._lock = threading.Lock()
         self._db = sqlite3.connect(directory / "cache.db", check_same_thread=False, timeout=10, isolation_level=None)
-        self._db.execute("PRAGMA journal_mode=WAL")
+        self._db.execute("PRAGMA busy_timeout=10000")
+        try:
+            self._db.execute("PRAGMA journal_mode=WAL")
+        except sqlite3.OperationalError:
+            pass
         self._db.execute("CREATE TABLE IF NOT EXISTS responses (provider TEXT, key TEXT, value BLOB, PRIMARY KEY (provider, key))")
         self._db.execute("CREATE TABLE IF NOT EXISTS sim_utterances (utt_id INTEGER PRIMARY KEY, entry TEXT)")
 
